@@ -10,3 +10,5 @@ import json
 
 #Read CSV file 
 twitter_archive = pd.read_csv('twitter-archive-enhanced.csv')
+
+twitter_archive.head()
