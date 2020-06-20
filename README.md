@@ -47,3 +47,18 @@ In tweet_json table, tweet_id is object type. this is not consistent with data t
 
 There are 2356 rows in twitter_archive, while 2075 rows in images_prediction.The size of the table do not match.
 
+
+Tidiness Issues
+1 Columns issue.
+
+Each variable forms a column. In twitter_archive table,the last four columns all relate to the stage of dogs (dogoo, floofer, pupper, puppo).
+
+2 Untidy data. In twitter_archive table, column source data have "<a" tag in HTML format surrounding the text.These are not common internet address for ordinary users.
+
+3 Uppercase and lowercase mixture
+
+In images prediction table, there is no consistency in p1, p2 and p3 columns. Sometimes the dog breed predictios are lowercase, sometimes they are uppercase.
+
+4 Image_prediction table.
+
+Tidiness require each type of observational unit forms a table.Tweet_archive and tweet_json can be merged into one table because they have same tweet_id column.
